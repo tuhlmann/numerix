@@ -1,0 +1,25 @@
+.animated {
+
+  &.bounceIn {
+    @include bounceIn();
+
+    &.long {
+      @include bounceIn($duration: 2s);
+    }
+
+  }
+
+  &.fadeIn {
+    @include fadeIn();
+
+    &.long {
+      @include fadeIn($duration: 2s);
+    }
+
+  }
+
+  &.tada {
+    @include tada();
+  }
+
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Invoice</title>
+  <link href="{{host-url}}/css/printable-styles.css" rel="stylesheet"></link>
+
+
+  <style type="text/css">
+    @page {
+      size: a4 portrait;
+      margin-left: 2cm;
+      margin-right: 2cm;
+    }
+
+    body {
+      margin-right: 0.8cm;
+    }
+  </style>
+</head>
+<body>
+<div class="print-view">
+
+  <form action="">
+    <div style="margin-bottom:20px;" class="row hide-no-print">
+      <div class="col-12">
+        <span class="pull-right">
+          <span>{{user.name}}</span><br/>
+          <span>{{user.company}}</span><br/>
+          <span>{{user.street}}</span><br/>
+          <span>{{user.zip}} {{user.city}}</span><br/>
+          <span>{{user.country}}</span><br/>
+        </span>
+      </div>
+    </div>
+
+    <div class="row hide-no-print">
+      <div class="col-6">
+        <div style="border-bottom:1px solid black;margin-bottom:10px;" class="text-small">
+          {{user.company}} {{user.name}}, {{user.street}}, {{user.zip}} {{user.city}}
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom:20px;" class="row">
+      <div class="col-sm-5 col-12">
+        <span class="pull-left">
+          <span>{{company.name}}</span><br/>
+          <span>{{company.street1}}</span><br/>
+          <span>{{company.zip}} {{company.city}}</span><br/>
+          <span>{{company.country}}</span>
+        </span>
+      </div>
+
+      <div class="col-sm-5 offset-sm-2 col-12">
+        <div class="pull-right">
+          <span>Invoice Date: {{invoice.invoice-date-str}}</span><br/>
+          <span>Delivery Date: {{invoice.delivery-date-str}}</span><br/>
+          <span>VAT ID: {{user.vat-number}}</span><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row hide-no-print">
+      <div class="col-12">
+        <h2>Invoice {{invoice.invoice-no}}</h2>
+      </div>
+    </div>
+
+    <div class="row m-b-md m-t-md">
+      <div class="col-12">
+        <div>
+          {{#textblocks}}
+            <p class="m-b-half">{{text}}</p>
+          {{/textblocks}}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <table class="table invoice-table">
+          <thead>
+          <tr>
+            <th style="width:10%;">Qty</th>
+            <th style="width:55%;">Summary</th>
+            <th style="width:10%;"><span class="pull-right">Amount</span></th>
+            <th style="width:10%;"><span class="pull-right">Vat %</span></th>
+            <th style="width:15%;"><span class="pull-right">Total ({{company.currency}})</span></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#invoice.invoice-items}}
+          <tr>
+            <td><p class="form-control-static">{{quantity}}</p></td>
+            <td><p class="form-control-static">{{summary}}</p></td>
+            <td><p class="form-control-static"><span class="pull-right">{{amount}}</span></p></td>
+            <td><p class="form-control-static"><span class="pull-right">{{vat}}</span></p></td>
+            <td><p class="form-control-static" ><span class="pull-right">{{net-amount}}</span></p></td>
+          </tr>
+          {{/invoice.invoice-items}}
+          </tbody>
+
+          <tfoot>
+          <tr>
+            <td colspan="4">Net Total</td>
+            <td><p class="form-control-static"><span class="pull-right">{{invoice.net-total}}</span></p></td>
+          </tr>
+
+          {{#invoice.vat-items}}
+          <tr>
+            <td colspan="2">{{vat-header}}</td>
+            <td><p class="form-control-static"><span class="pull-right">{{net-total}}</span></p></td>
+            <td><p class="form-control-static"><span class="pull-right">{{vat-total}}</span></p></td>
+            <td><p class="form-control-static"><span class="pull-right">{{gross-total}}</span></p></td>
+          </tr>
+          {{/invoice.vat-items}}
+
+          <tr>
+            <th colspan="4">Amount Payable ({{company.currency}})</th>
+            <th><p class="form-control-static"><span class="pull-right">{{invoice.payable-amount}}</span></p></th>
+          </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </form>
+
+</div>
+
+</body>
+</html>

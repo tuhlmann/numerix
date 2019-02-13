@@ -1,0 +1,38 @@
+@import "tether/tether";
+
+$enable-flex:               false;
+$enable-gradients:          false;
+$enable-transitions:        false;
+@import "bootstrap/bootstrap";
+@import "variables";
+
+@import "font-awesome/font-awesome";
+
+@import "re-com/bootstrap-chosen";
+@import "re-com/re-com";
+
+@import "quill/quill.core";
+@import "quill/quill.snow";
+
+@import "animate/animate-uhl.scss";
+
+@import "components/sidebar";
+@import "components/animations";
+@import "components/master-detail";
+@import "components/invoices";
+@import "components/print-view";
+@import "components/editor";
+@import "components/tag-input";
+@import "components/file-upload";
+
+@import "custom";
+
+// FlyingSaucer compliant definition of FA
+@font-face {
+  font-family: FontAwesome;
+  src: url(/fonts/fontawesome-webfont.ttf);
+  font-weight: normal;
+  font-style: normal;
+  -fs-pdf-font-embed: embed;
+  -fs-pdf-font-encoding: Identity-H;
+}

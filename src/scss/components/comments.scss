@@ -1,0 +1,167 @@
+#comments-container-wrapper {
+
+  #comments-container {
+
+    @include display-flex;
+
+    #comments-section {
+      overflow-x: hidden;
+      flex: 1 1 100%;
+
+      .comments-list {
+
+        padding-right: 5px;
+        margin-bottom: 10px;
+
+        .comment-container {
+
+          @include display-flex;
+
+          padding-top: 0.731rem;
+          padding-bottom: 0.808rem;
+          line-height: 1.615rem;
+
+          .comment-message-lead {
+            flex: 0 0 auto;
+
+            .comment-author-img {
+              max-width: 32px;
+              margin: 3px 10px 0 3px;
+            }
+
+          }
+
+          .comment-message {
+            flex: 1 1 auto;
+
+            //margin: 28px 20px 14px 0;
+            margin: 0 0 0 0;
+            position: relative;
+            border: 1px solid $color-grey;
+            border-radius: 5px;
+            padding: 0;
+
+            h3 {
+              display: inline-block;
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+            }
+            .date {
+              color: #828282;
+              display: inline-block;
+              font-size: 10px;
+              padding-top: 2px;
+              margin-left: 5px;
+            }
+
+            .message-container {
+              display: block;
+              padding: 3px 10px 3px 10px;
+
+              div, p {
+                display: block;
+              }
+              p {
+                margin-bottom: 0;
+              }
+            }
+
+            .comment-message-header {
+              background-color: $color-light-grey;
+              padding: 3px 10px 3px 10px;
+
+              &:after, &:before {
+                right: 100%;
+                top: 16px;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+              }
+
+              &:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-right-color: $border-color;
+                border-width: 7px;
+                margin-top: -7px;
+              }
+              &:before {
+                border-color: rgba(221, 221, 221, 0);
+                border-right-color: $border-color;
+                border-width: 8px;
+                margin-top: -8px;
+              }
+
+            }
+
+            .comment-message-hover-row {
+              position: absolute;
+              right: 0;
+              top: 0px;
+
+              .comment-message-hover-btn {
+                color: #8c8c8c;
+              }
+            }
+          }
+
+          &.me {
+            .comment-message {
+              h3 {
+                color: #00a651;
+              }
+            }
+          }
+
+        }
+
+      }
+
+      //.comments-list:after {
+      //  content:"";
+      //  position: absolute;
+      //  z-index: -1;
+      //  top: 0;
+      //  bottom: 0;
+      //  left: 50%;
+      //  border-left: 2px dotted #ff0000;
+      //  transform: translate(-50%);
+      //}
+
+      .comments-footer {
+        @include display-flex;
+        border-top: 2px solid black;
+        margin: 0 5px 0 0;
+        padding: 10px 0;
+        min-height: 70px;
+
+        .comments-input-area-container {
+          flex: 1;
+          padding-right: 0px;
+        }
+        //.btn,
+        //.form-control {
+        //  // this border style is what causes the halo effect
+        //  // on the highlighted mention in the input (textarea)
+        //  border: none;
+        //  box-shadow: none;
+        //}
+        //.btn {
+        //  font-size: 24px;
+        //  padding: 0;
+        //}
+
+        .comments-input-area {
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+
+  }
+}

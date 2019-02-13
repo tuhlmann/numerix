@@ -1,0 +1,23 @@
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+/resources/public/js
+/out
+/.repl
+/.idea/
+/.sass-cache/
+/.settings/
+/bin/
+/.project
+*.iml
+/figwheel_server.log
+/Clojure REPL
+*.tags
+/numerix.log
+/node_modules/

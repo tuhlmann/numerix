@@ -1,0 +1,14 @@
+You have been contacted by {{name}}.
+
+Given phone number: {{phone}}
+
+Given email address: {{email}}
+
+Message:
+========
+
+{{message}}
+
+
+-- 
+Send through AGYNAMIX Numerix

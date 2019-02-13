@@ -1,0 +1,9 @@
+-/bin
+-/classes
+-/resources/public/js/out
+-/target
+-/.sass-cache
+-/.lein-env
+-/.lein-failures
+-/.lein-repl-history
+-/doc

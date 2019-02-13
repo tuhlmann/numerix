@@ -1,0 +1,13 @@
+Congratulations!
+
+A new user account has been created for {{email}}.
+
+If this wasn't you please ignore this email.
+We will unlock the account only upon your confirmation.
+
+To confirm your email address and to unlock your user account please click on the link below:
+
+{{confirm-account-url}}
+
+--
+Send through AGYNAMIX Numerix

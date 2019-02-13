@@ -1,0 +1,63 @@
+.no-border-top {
+  border-top: none !important;
+}
+
+.no-border-bottom {
+  border-bottom: none !important;
+}
+
+.margin-top-05 {
+  margin-top: 0.5rem;
+}
+
+.link-danger {
+  color: theme-color("danger");
+}
+
+/* Change standards for dropdown menus */
+ul.dropdown-menu {
+  li {
+    a {
+      color: $gray-800;
+      text-decoration: none;
+    }
+  }
+}
+
+.generic-form-detail-area {
+  box-shadow: 3px 3px 8px 0px rgba(51, 51, 51, 0.4);
+}
+
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
+
+  // Undo the rounded corners
+  @include media-breakpoint-up(sm) {
+    @include border-radius(0);
+  }
+}
+
+.navbar-fixed-top {
+  top: 0;
+}
+
+.navbar-fixed-bottom {
+  bottom: 0;
+}
+
+.navbar-sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: $zindex-navbar-sticky;
+  width: 100%;
+
+  // Undo the rounded corners
+  @include media-breakpoint-up(sm) {
+    @include border-radius(0);
+  }
+}

@@ -1,0 +1,33 @@
+.invoices-page {
+  .announce-enter {
+    @include fadeIn($duration: 0.7s);
+  }
+
+  .announce-leave {
+    @include fadeOut($duration: 0.7s);
+  }
+
+  .announce-enter-active {
+  }
+}
+
+.invoice-table {
+
+  th, td {
+    vertical-align: middle;
+  }
+
+  tfoot {
+    border-top: 2px solid #000;
+  }
+
+}
+
+@media print {
+  .invoice-table {
+
+    tfoot {
+      page-break-inside: avoid;
+    }
+  }
+}

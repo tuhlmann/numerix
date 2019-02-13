@@ -1,0 +1,57 @@
+// Override Bootstrap defaults
+
+$enable-flex:               true;
+$enable-gradients:          true;
+$enable-transitions:        true;
+
+.navbar-brand {
+  font-size: 1.2rem;
+}
+
+// My own variables
+
+$container-background-color: #fff; // #f2f2f2;
+
+$color-light-grey: #D6D6D7;
+$color-grey: #DDD;
+$color-mention: #84BD00;
+$bg-color-light-grey: #e1e1e1;
+
+$base-black: #000;
+$base-white: #fff;
+
+$brand-info: #84BD00;
+
+// Colors for navigation
+$nav-fg-color: rgb(255, 255, 255);
+$nav-hover-color: grey;
+//$nav-bg-color: rgb(36, 41, 70);
+$nav-bg-color: #393449;
+//$nav-bg-color: rgb(69, 35, 57);
+//$nav-bg-color: rgb(25, 50, 34);
+
+$sidebar-item-color: #999999;
+
+$border-color: #ddd;
+
+// Migrate from old bootstrap
+$input-border-focus: #66afe9 !default;
+$btn-danger-bg: theme-color("danger") !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-navbar-sticky:     1030 !default;
+
+.bg-dark {
+  color: $gray-200;
+  //background-color: $gray-dark;
+  background-color: $nav-bg-color;
+}
+
+.bg-light {
+  background-color: $gray-100;
+}
+
+@mixin display-flex() {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}

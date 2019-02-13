@@ -1,0 +1,9 @@
+{{caller-name}} mentioned you in a chat:
+
+{{chat-message}}
+
+To see the chat please go to:
+{{chat-message-url}}
+
+--
+Send through AGYNAMIX Numerix

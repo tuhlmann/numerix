@@ -1,0 +1,47 @@
+.wysiwyg-editor {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  width: 100%;
+
+  &:not(.readonly) {
+    border-radius: 3px;
+
+    .ql-container.editor-container {
+      min-height: 8rem;
+      max-height: 40rem;
+
+      .ql-editor {
+        min-height: 8rem;
+        max-height: 40rem;
+        height: 100%;
+      }
+    }
+  }
+
+  &.readonly {
+    margin-top: 3px;
+    .ql-toolbar {
+      display: none;
+    }
+    .ql-container {
+      border: none !important;
+      padding-left: 0;
+      padding-right: 0;
+
+      .ql-editor {
+        padding: 0;
+      }
+    }
+
+  }
+
+  .ql-container {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+  }
+
+  .toolbar-container {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+}

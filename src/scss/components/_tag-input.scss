@@ -1,0 +1,139 @@
+.cti__root {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  position: relative;
+  //width: 330px;
+}
+
+.cti__root * {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.cti__input {
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0.25rem;
+  padding: .1em 24px .1em .1em;
+  min-height: 38px;
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cti__input__arrow {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  right: 10px;
+  top: 50%;
+  margin-top: -2px;
+
+  &.down {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgb(140, 140, 140);
+  }
+
+  &.up {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid rgb(140, 140, 140);
+  }
+
+}
+
+.cti__input__tags, .cti__input__input {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.cti__input__input {
+  max-width: 100%;
+  padding: .4em 0 !important;
+  margin: .1em 0 .1em .4em !important;
+  font-size: 1em !important;
+  border: none;
+  flex: 1;
+}
+
+.cti__tag {
+  background-color: white;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 3px;
+  padding: .1em .6em;
+  color: rgb(146, 146, 146);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  margin: .1em  0 .1em .4em;
+  cursor: pointer;
+  word-break: break-all;
+  max-width: 100%;
+}
+
+.cti__tag__content--match {
+  color: black;
+  font-weight: bold;
+}
+
+.cti__tag__delete, .cti__tag__content, .cti__tag__content > span {
+  //display: inline-flex;
+  //vertical-align: middle;
+  justify-content: center;
+}
+
+.cti__tag__delete {
+  background-color: transparent;
+  padding: 0 0 0 .3em;
+  margin: -4px 0 0 0;
+  color: rgb(146, 146, 146);
+  font-size: 1.2em;
+  border: none;
+}
+
+.cti__panel {
+  position: absolute;
+  background: white;
+  border: 1px solid rgb(220, 220, 220);
+  border-top: none;
+  width: 100%;
+  z-index: 9997;
+}
+
+.cti__category__add-item {
+  background: transparent;
+  border: none;
+  color: rgb(28, 99, 166);
+  font-size: 1em;
+}
+
+.cti__category__add-item.cti-selected {
+  margin-left: .4em;
+}
+
+.cti__category__or {
+  margin-left: .4em;
+}
+
+.cti-selected {
+  background-color: rgb(229, 241, 255);
+  border: 1px solid rgb(207, 219, 234);
+  border-radius: 3px;
+}
+
+.cti__category {
+  padding: .4em;
+}
+
+.cti__category__title {
+  padding: .3em 0;
+  margin: 0;
+  color: rgb(200, 200, 200);
+  font-weight: normal;
+  font-size: 90%;
+}

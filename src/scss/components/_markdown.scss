@@ -1,0 +1,57 @@
+.markdown-area {
+
+  h1, h2, h3, h4 {
+    display: block;
+    text-decoration: none;
+    font: Helvetica, Arial, Sans-Serif;
+    color: #444;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+
+  pre {
+    margin: 0 auto;
+    background: #eee;
+    padding: 5px;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 5px;
+    border-radius: 3px;
+  }
+
+  code {
+    margin-right:   0.2em;
+    border-radius:  2px;
+    color:          #333;
+    background:     #eee;
+    border:         none;
+    padding:        0.1em 0.3em;
+  }
+
+  a {
+    text-decoration: none;
+    font: 18px Helvetica, Arial, Sans-Serif;
+    color: #999;
+    text-shadow: 0px 3px 8px #2a2a2a;
+  }
+  a:hover {
+    color: #a0a0a0;
+    text-shadow: 0px 5px 8px #2a2a2a;
+  }
+  hr {
+    height: 3px;
+    border: 0;
+    background-color: #333;
+  }
+
+}

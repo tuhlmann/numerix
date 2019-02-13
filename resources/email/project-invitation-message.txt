@@ -1,0 +1,14 @@
+{{inviter-name-or-email}} has invited you to join project '{{project-name}}' on Numerix!
+
+If your email address was mistakenly added please ignore this email.
+
+To join '{{project-name}}' please click on the link below:
+
+{{confirm-invitation-url}}
+
+Your project invitation will expire after {{invitation-expire-days}} days on {{invitation-expire-date}}.
+
+{{optional-inviter-message}}
+
+--
+Send through AGYNAMIX Numerix

@@ -1,0 +1,13 @@
+#print-wrapper {
+  margin-top: 60px;
+}
+
+.hide-no-print {
+  display: none;
+}
+
+.print-view {
+  .hide-no-print {
+    display: inherit;
+  }
+}

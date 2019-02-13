@@ -1,0 +1,235 @@
+#chat-room-container-wrapper {
+
+  #chat-room-container {
+
+    @include display-flex;
+
+    #chat-room {
+      overflow-x: hidden;
+      flex: 1 1 75%;
+
+      .chat-message-list {
+
+        padding-right: 5px;
+        min-height: 200px;
+        max-height: 450px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 10px;
+
+        .chat-message-container {
+
+          @include display-flex;
+
+          border-top-width: 0.077rem;
+          border-top-style: solid;
+          border-color: $color-grey;
+          padding-top: 0.731rem;
+          padding-bottom: 0.808rem;
+          line-height: 1.615rem;
+
+          &:first-child {
+            border-top: none;
+          }
+
+          .chat-message-lead {
+            flex: 0 0 auto;
+
+            .chat-author-img {
+              max-width: 32px;
+              margin: 10px 10px 0 3px;
+            }
+
+          }
+
+          .chat-message {
+            flex: 1 1 auto;
+
+            //margin: 28px 20px 14px 0;
+            margin: 0 0 0 0;
+            padding: 0;
+            position: relative;
+
+            h3 {
+              display: inline-block;
+              font-size: 14px;
+              margin: 0;
+              padding: 0;
+            }
+            .date {
+              color: #828282;
+              display: inline-block;
+              font-size: 10px;
+              padding-top: 2px;
+              margin-left: 5px;
+            }
+
+            .message-container {
+              display: block;
+
+              div, p {
+                display: block;
+              }
+              p {
+                margin-bottom: 0;
+              }
+            }
+
+            .chat-message-hover-row {
+              position: absolute;
+              right: 0;
+              top: 0px;
+
+              .chat-message-hover-btn {
+                color: #8c8c8c;
+              }
+            }
+          }
+
+          &.me {
+            .chat-message {
+              h3 {
+                color: #00a651;
+              }
+            }
+          }
+
+        }
+
+      }
+
+      .chat-room-footer {
+        @include display-flex;
+        border-top: 2px solid black;
+        margin: 0 5px 0 0;
+        padding: 10px 0;
+        min-height: 70px;
+
+        .chat-input-area-container {
+          flex: 1;
+          padding-right: 0px;
+        }
+        .btn,
+        .form-control {
+          // this border style is what causes the halo effect
+          // on the highlighted mention in the input (textarea)
+          border: none;
+          box-shadow: none;
+        }
+        .btn {
+          font-size: 24px;
+          padding: 0;
+        }
+
+        .chat-input-area {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+    }
+
+    #user-presence-container {
+      flex: 0 0 25%;
+
+      .online-status {
+
+        a, button {
+          color: #666;
+          display: block;
+          font-weight: normal;
+          text-transform: none;
+          padding: 0px;
+          text-decoration: none;
+
+          &:before {
+            content: "\f10c";
+            font-family: FontAwesome;
+            margin: 0 5px 0 2px;
+          }
+
+          &.online-somewhere {
+            color: $base-black;
+            &:before {
+              color: #f58964;
+              content: "\f111";
+            }
+          }
+          &.online-here {
+            color: $base-black;
+            &:before {
+              color: $brand-info;
+              content: "\f111";
+            }
+          }
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0 0 0 10px;
+        padding: 0;
+      }
+
+    }
+  }
+}
+
+.atwho-view {
+  position:absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  margin-top: 18px;
+  background: white;
+  color: black;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  min-width: 120px;
+  max-height: 200px;
+  overflow: auto;
+  z-index: 11110 !important;
+
+  .cur {
+    //background: #3366FF;
+    background: #ddd;
+    //color: white;
+
+    small {
+      //color: white;
+    }
+
+    strong {
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  strong {
+    //color: #3366FF;
+    color: #ddd;
+  }
+
+  ul {
+    /* width: 100px; */
+    list-style: none;
+    padding: 0;
+    margin: auto;
+
+    li {
+      display: block;
+      padding: 5px 10px;
+      border-bottom: 1px solid #DDD;
+      cursor: pointer;
+      /* border-top: 1px solid #C8C8C8; */
+    }
+  }
+
+  small {
+    font-size: smaller;
+    color: #777;
+    font-weight: normal;
+  }
+
+}

@@ -1,0 +1,177 @@
+@media screen {
+
+  html, body {
+    height: 100%;
+  }
+
+  html, body {
+    //height: 90%;
+    margin: 0;
+    padding: 0;
+    //font-family: "Open Sans", serif;
+    font-family: Segoe UI, Roboto, sans-serif;
+    //font-size:      14px;
+    font-weight: 400;
+    //background-color: $container-background-color;
+
+    background: url(/img/pw_pattern.png) repeat;
+
+    //background: url(/img/grey_wash_wall.png) repeat;
+    //background: url(/img/subtle_white_feathers.png) repeat;
+    //background: url(/img/mochaGrunge.png) repeat;
+
+    // A gradient github style
+    //background-image: linear-gradient(180deg, rgba(255,255,255,0) 60%, #fff),
+    //                  linear-gradient(70deg, #eddaff 32%, #fffae3);
+  }
+
+}
+
+@media print {
+  html, body {
+    background-color: $container-background-color;
+  }
+}
+
+
+#react-page {
+  //background-color: $container-background-color;
+  height: 100%;
+}
+
+.footer-link {
+  color: $component-active-color;
+
+  &:hover {
+    color: $component-active-color;
+  }
+}
+
+.right-inner-addon {
+  position: relative;
+}
+
+.right-inner-addon input{
+  padding-right: 30px;
+}
+
+.right-inner-addon i{
+
+  position:absolute;
+  /*text-indent: -15px;
+  bottom: -8px;
+  font-size: 1.3em;*/
+  right: 0px;
+  padding: 10px 12px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.as-link {
+  cursor: pointer;
+  color: #0275d8;
+}
+
+.collapsible-menu-item {
+  float: none !important;
+  margin-left: 0 !important;
+}
+
+@include media-breakpoint-up(md) {
+
+  .master-scrollable-list {
+    overflow-y: scroll;
+  }
+
+}
+
+.btn-transp {
+  border: none;
+  background: transparent;
+  outline: none !important;
+}
+
+.hidden-always {
+  display: none;
+}
+
+
+form {
+  .no-border {
+    border: 0 !important;
+    box-shadow: none !important; /* You may want to include this as bootstrap applies these styles too */
+  }
+}
+
+.text-small {
+  font-size: smaller;
+}
+
+.btn-group {
+  &.spaced-btn-group {
+    &:not(:last-child) {
+      margin-right: 0.3rem;
+    }
+    margin-left: 0.3rem;
+  }
+
+  &.bordered {
+    &:not(:last-of-type) {
+      padding-right: 0.3rem;
+      box-shadow: 4px 0px 1px -4px $text-muted;
+      margin-right: 0.3rem;
+    }
+    &:last-of-type {
+      margin-left: 0.2rem;
+    }
+  }
+
+}
+
+.m-t-md {
+  margin-top: 15px;
+}
+
+.m-b-md {
+  margin-bottom: 15px;
+}
+
+.last-item-m-b-0 {
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.m-b-half {
+  margin-bottom: 0.5rem;
+}
+
+.border-t {
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+}
+
+.border-b {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.color-light-control-elem {
+  color: $color-light-grey;
+}
+
+.reveal-on-focus {
+
+  .revealed-on-focus {
+    visibility: hidden;
+  }
+
+  &:hover {
+    .revealed-on-focus {
+      visibility: visible;
+    }
+  }
+
+}

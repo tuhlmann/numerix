@@ -1,0 +1,9 @@
+# sudo mkdir -p /srv/acmweb/mongo-data/db
+mongo:
+  image: library/mongo
+  command: "/entrypoint.sh --noprealloc --smallfiles --httpinterface"
+  ports:
+    - "2700:27017"
+    - "2701:28017"
+  volumes:
+    - /srv/acmweb/mongo-data/db:/data/db

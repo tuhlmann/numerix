@@ -1,0 +1,8 @@
+A new user has just registered at Numerix:
+
+Name:  {{name}}
+Email: {{email}}
+
+
+--
+Send through AGYNAMIX Numerix

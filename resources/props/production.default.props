@@ -1,0 +1,23 @@
+{
+
+ :contact   "contact@example.com"
+
+ :host "https://www.my-numerix-url.com"
+
+ :mongo-uri  "mongodb://localhost:27017/numerix"
+
+ :email {
+   :from    "Numerix <central@example.com>"
+   :user    "smtp_user_name"
+   :pass    "smtp_user_pwd"
+   :host    "smtp_host"
+   :ssl     true
+ }
+
+ :http {
+   :port   "8888"
+ }
+
+ :log-path "/var/log/numerix"
+}
+

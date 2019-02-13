@@ -1,0 +1,23 @@
+{
+
+ :contact   "contact@example.com"
+
+ :host "http://localhost:10555"
+
+ :mongo-uri  "mongodb://localhost:27017/numerix"
+
+ :email {
+   :from    "Numerix <central@example.com>"
+   :user    "smtp_user_name"
+   :pass    "smtp_user_pwd"
+   :host    "smtp_host"
+   :ssl     true
+ }
+
+ :http {
+   ;:port   "10555"
+ }
+
+ ;; Enable this to write to a logfile instead of println
+ ;; :log-path "."
+}

@@ -1,0 +1,468 @@
+<div id="content">
+  <!-- page-top -->
+
+  <nav id="mainNav" class="navbar navbar-expand-sm navbar-default navbar-fixed-top fixed-top">
+    <div id="pane-navigation" class="container-fluid">
+      <a id="scroll-to-top" class="navbar-brand page-scroll" href="#page-top">Numerix</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#numerix-navbar" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="numerix-navbar">
+        <ul class="navbar-nav ml-auto">
+          <li id="about-li" class="nav-item">
+            <a id="about-link" class="nav-link page-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#services">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a id="a-login" class="nav-link" href="Javascript://">Login / Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="pane-login" class="container-fluid" style="display:none;">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a id="pane-login-a-brand" class="navbar-brand" href="#page-top">Numerix</a>
+
+        <div class="col-sm-6 col-12">
+          <div class="landing-login-form">
+            <form id="landing-login-form" class="pull-right-sm-up" action="/login" method="post">
+              <div class="form-row">
+                <div class="form-group mb-0">
+                  <input type="email" class="form-control" name="username" placeholder="Email" required
+                         data-validation-email-message="Please enter your email address.">
+                  <p class="text-muted text-danger"></p>
+                </div>
+                <div class="form-group mb-0">
+                  <input type="password" class="form-control" name="password" placeholder="Password" required
+                         data-validation-required-message="Please enter your password.">
+                  <p class="text-muted text-danger"></p>
+                </div>
+                <div class="form-group mb-0">
+                  <input type="hidden" name="next-url" value="/">
+                  <button type="submit" class="btn btn-default ml-sm-1">Login</button>
+                  <p class="text-muted text-danger"></p>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group mb-0 ml-auto">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember" value="remember-me">&nbsp;Remember me&nbsp;
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group mb-0 ml-auto">
+                  <a href="/register">Register a new user</a>
+                  <a href="/reset-password">&nbsp;Reset Password</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+    </div>
+
+  </nav>
+
+
+  <!--<div id="flash-messages" style="width:100%; z-index:99; opacity: 100;">-->
+    <!--<div class="alert alert-info">-->
+      <!--<p class="message"></p>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <header>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1>Numerix - Painless Invoices</h1>
+        <hr>
+        <p>Numerix lets you manage your invoices for international clients, easily manage time
+          spent on a project and so much more. Try it today, no strings attached!</p>
+        <a href="#about" onclick="$('#about-li').addClass('active');" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <h2 class="section-heading">Easy Invoicing at your fingertips!</h2>
+          <hr class="light">
+          <p class="text-faded">AGYNAMIX Numerix offers everything you need to create outstanding and correct
+          invoices for your international clients.</p>
+          <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">At Your Service</h2>
+          <hr class="primary">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-diamond animated text-primary" data-animated="bounceIn"></i>
+            <h3>Sturdy Templates</h3>
+            <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-paper-plane animated text-primary" data-animated="bounceIn" data-animated-delay="100"></i>
+            <h3>Easy to Start</h3>
+            <p class="text-muted">Start using Numerix today. Simply create an account and bill away.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-newspaper-o animated text-primary" data-animated="bounceIn" data-animated-delay="200"></i>
+            <h3>Up to Date</h3>
+            <p class="text-muted">We'll keep this application fresh and updated so you'll always work with the latest.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-heart animated text-primary" data-animated="bounceIn" data-animated-delay="300"></i>
+            <h3>Made with Love</h3>
+            <p class="text-muted">We'll use Numerix ourselves and we made it with love.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <aside class="bg-dark">
+    <div class="container text-center">
+      <div class="call-to-action">
+        <h2>Start using Numerix now.</h2>
+        <a href="/register" class="btn btn-default btn-xl animated" data-animated="tada">Register Now!</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Let's Get In Touch!</h2>
+          <hr class="primary">
+          <p class="text-muted">
+            Have questions, tips, compliments, other nice words? Let us know!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="name" required
+                       data-validation-required-message="Please enter your name.">
+
+                <p class="text-muted text-danger"></p>
+              </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Email Address" id="email" required
+                       data-validation-required-message="Please enter your email address.">
+
+                <p class="text-muted text-danger"></p>
+              </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Phone Number</label>
+                <input type="tel" class="form-control" placeholder="Phone Number" id="phone">
+                <p class="text-muted text-danger"></p>
+              </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Message</label>
+                <textarea rows="5" class="form-control" placeholder="Message" id="message" required
+                          data-validation-required-message="Please enter a message."></textarea>
+
+                <p class="text-muted text-danger"></p>
+              </div>
+            </div>
+            <br>
+
+            <div id="success"></div>
+            <div class="row">
+              <div class="form-group col-12">
+                <button type="submit" class="btn btn-primary btn-xl animated" data-animated="tada">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="footer-above">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col col-md-4">
+            <h3 class="animated" data-animated="bounceIn">Location</h3>
+
+            <p>AGYNAMIX&reg;<br>Buchenweg 5<br>09380 Thalheim</p>
+          </div>
+          <div class="footer-col col-md-4">
+            <h3 class="animated" data-animated="bounceIn" data-animated-delay="100">Around the Web</h3>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="http://facebook.com/agynamix" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://plus.google.com/+TorstenUhlmannCrafts" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://twitter.com/agynamix" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://linkedin.com/in/torstenuhlmann" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://www.xing.com/profile/Torsten_Uhlmann2" class="btn-social btn-outline"><i class="fa fa-fw fa-xing"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-4">
+            <h3 class="animated" data-animated="bounceIn" data-animated-delay="200">About Numerix</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#legalModal1" data-toggle="modal">Imprint / Impressum</a>&nbsp;|&nbsp;
+                <a href="/terms" target="_blank">Terms of Service</a>
+              </li>
+              <li>
+                Numerix is made with <i class="fa fa-heart"></i> by <a href="http://www.agynamix.de">AGYNAMIX.</a>
+              </li>
+              <li>
+                &copy; 2015-2016 <a href="http://www.agynamix.de">AGYNAMIX Torsten Uhlmann</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Legal Modals -->
+  <div class="creative-modal modal fade" id="legalModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="modal-body">
+          <h2>Imprint / Impressum</h2>
+
+          <div class="row text-left">
+            <div class="col-md-6">
+              <h3>Angaben gemäß § 5 TMG:</h3>
+              <p>
+                AGYNAMIX Torsten Uhlmann<br>
+                Buchenweg 5<br>
+                09380 Thalheim
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>Kontakt</h3>
+              <address>
+                <strong>Address</strong> <br>
+                AGYNAMIX Torsten Uhlmann<br>
+                Buchenweg 5<br>
+                09380 Thalheim <br>
+                <br>
+                <strong>Erreichbar unter:</strong><br>
+                Telefon: 03721 273445<br>
+                Fax: 03721 273446<br>
+                Email: contact@agynamix.de
+              </address>
+            </div>
+          </div>
+          <div class="row text-left">
+            <div class="col-md-6">
+              <h3>Umsatzsteuer-ID</h3>
+              <p>
+                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                DE814106145
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>Verantwortlich für den Inhalt nach §55 Abs. 2 RStV</h3>
+              <p>
+                AGYNAMIX Torsten Uhlmann<br>Buchenweg 5<br>09380 Thalheim
+              </p>
+            </div>
+          </div>
+          <!-- Example row of columns -->
+          <div class="row text-left">
+            <div class="col-md-12">
+              <h3>Haftungsausschluss</h3>
+
+              <p>
+                <strong>Haftung für Inhalte</strong>
+              </p>
+              <p>
+                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
+                Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen
+                Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet,
+                übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen,
+                die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung
+                von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung
+                ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich.
+                Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+              </p>
+              <p>
+                <strong>Haftung für Links</strong>
+              </p>
+              <p>
+                Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
+                Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+                Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+                Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
+                Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche
+                Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht
+                zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+              </p>
+              <p>
+                <strong>Urheberrecht</strong>
+              </p>
+              <p>
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+                Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des
+                Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+                Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
+                Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf
+                eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis.
+                Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+              <p>
+                <strong>Datenschutz</strong>
+              </p>
+              <p>
+                Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich.
+                Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen)
+                erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre
+                ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+              </p>
+              <p>
+                Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)
+                Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+              </p>
+              <p>
+                Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur
+                Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit
+                ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte
+                im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+              </p>
+              <p>&nbsp;</p>
+              <p>
+                <strong>Datenschutzerklärung für die Nutzung von Google	Analytics</strong>
+              </p>
+              <p>
+                Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google").
+                Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden
+                und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten
+                Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google
+                in den USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser
+                Webseite wird Ihre IP-Adresse von Google jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder
+                in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor gekürzt.
+              </p>
+              <p>
+                Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt.
+                Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website
+                auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung
+                und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen.
+                Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von
+                Google zusammengeführt.
+              </p>
+              <p>
+                Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software
+                verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht
+                sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die
+                Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten
+                (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern,
+                indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren:
+                <a href="http://tools.google.com/dlpage/gaoptout?hl=de">http://tools.google.com/dlpage/gaoptout?hl=de</a>.
+              </p>
+              <p>&nbsp;</p>
+              <p>
+                <strong>Datenschutzerklärung für die Nutzung von Google	Adsense</strong>
+              </p>
+              <p>
+                Diese Website benutzt Google AdSense, einen Dienst zum Einbinden von Werbeanzeigen der Google Inc. ("Google").
+                Google AdSense verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und
+                die eine Analyse der Benutzung der Website ermöglicht. Google AdSense verwendet auch so genannte
+                Web Beacons (unsichtbare Grafiken). Durch diese Web Beacons können Informationen wie der Besucherverkehr
+                auf diesen Seiten ausgewertet werden.
+              </p>
+              <p>
+                Die durch Cookies und Web Beacons erzeugten Informationen über die Benutzung dieser Website
+                (einschließlich Ihrer IP-Adresse) und Auslieferung von Werbeformaten werden an einen Server von Google
+                in den USA übertragen und dort gespeichert. Diese Informationen können von Google an Vertragspartner von
+                Google weiter gegeben werden. Google wird Ihre IP-Adresse jedoch nicht mit anderen von Ihnen gespeicherten
+                Daten zusammenführen.
+              </p>
+              <p>
+                Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software
+                verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche
+                Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie
+                sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise
+                und zu dem zuvor benannten Zweck einverstanden.</p>
+              <p>&nbsp;</p>
+              <p>
+                <i>Quellenangaben: <a target="_blank"
+                                      href="http://www.e-recht24.de/muster-disclaimer.htm">Disclaimer
+                  eRecht24</a>, <a target="_blank"
+                                   href="http://www.google.com/intl/de_ALL/analytics/tos.html">Google
+                  Analytics Datenschutzerklärung</a>, <a target="_blank"
+                                                         href="http://www.e-recht24.de/artikel/datenschutz/6635-datenschutz-rechtliche-risiken-bei-der-nutzung-von-google-analytics-und-googleadsense.html">Google
+                  Adsense Datenschutzerklärung</a>
+                </i>
+              </p>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
