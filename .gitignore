@@ -21,3 +21,4 @@ pom.xml.asc
 *.tags
 /numerix.log
 /node_modules/
+/.history/
